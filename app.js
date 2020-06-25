@@ -30,9 +30,11 @@ greenButton.addEventListener('click', () => {
     greenback.style.background = 'lightgreen'; 
 });
 
-// const enterButton = document.getElementById('yournamehere');
-// enterButton.addEventListener('click', () => {
-//     const myInput = document.getElementById('input');
-//     const userInput = myInput.value;
-//     const nameBox.textcontent = userInput;
-// });
+const myButton = document.getElementById('nameButton');
+myButton.addEventListener('click', () => {
+    const userNameInput = document.getElementById('nameField');
+    const nameDisplay = document.getElementById('nametag');
+    const value = userNameInput.value;
+    nameDisplay.textContent = value;
+
+});
